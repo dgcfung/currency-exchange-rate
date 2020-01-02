@@ -23,34 +23,30 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP 
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Find and use Fixer.io API
+- Render major cities exchange rate 
+- Allow currency conversion of USD to user selected city.
 
 #### PostMVP 
 
-- Add second API
+- Allow user to convert currency for two user chosen cities.
 - Use local storage to save user favorites
+- Advanced CSS mouseover.
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 2rd| Project Prompt | Incomplete
-|Jan 3rd| Wireframes / Priority Matrix / Functional Components | Incomplete
-|Jan 5th| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 6th| Pseudocode / actual code | Incomplete
-|Jan 7th| Initial Clickable Model  | Incomplete
-|Jan 8th| MVP | Incomplete
+|Jan 2rd| Complete wireframes and creation of repository. | Incomplete
+|Jan 3rd| Core Application Structure (HTML, CSS, etc.)/Pseudocode for JS Incomplete
+|Jan 5th| Get API Display for ten cities & search button  | Incomplete
+|Jan 6th| Add mouseover to button & mobile implementation| Incomplete
+|Jan 7th| Add CSS styling  | Incomplete
+|Jan 8th| Post MVP | Incomplete
 |Jan 9th| Present | Incomplete
 
 ## Priority Matrix
-
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
 
 ## Timeframes
 
