@@ -47,6 +47,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 |Jan 9th| Present | Incomplete
 
 ## Priority Matrix
+![image](https://media.git.generalassemb.ly/user/25138/files/fbf75200-2d73-11ea-835f-b8e898e396f3)
 
 ## Timeframes
 
@@ -54,17 +55,15 @@ Tell us how long you anticipate spending on each area of development. Be sure to
 
 ## API Data Sample
 
-Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
-
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
-
+| Setup HTML CSS | H | 4hrs |
+| Access API for 10 cities | H | 4hrs |
+| Build Search for user input city | H | 8hrs| 
+| CSS + mouseover| H | 8hrs| 
+| Post-MVP: Multi-city exchange rate| H | 8hrs|
+| Post-MVP: CSS mouseovers| H | 4hrs|
 
 ## Code Snippet
 
