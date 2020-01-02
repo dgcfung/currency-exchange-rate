@@ -190,8 +190,7 @@ Repository Name: Fixer.io
 }
 
 ## Wireframes
-
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![image](https://media.git.generalassemb.ly/user/25138/files/f3514c80-2d70-11ea-8c74-826aaf41c3cf)
 
 ### MVP/PostMVP - 5min
 
