@@ -6,29 +6,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Currency Exchange Rate</title>
 </head>
 
-<header>
-
-
-</header>
 <body>
 <div class="container">
-<header>
-<h1>Currency Exchange Rate</h1>
-</header>
+    <header>
+        <h1>Currency Exchange Rate</h1>
+    </header>
+
 <div class="mobile-compat">
 
+
+
+<form>
+    <form>
+        <input type="text" name="currency" value="" placeholder="Currency to Convert" id="currency-conversion">
+        <input type="submit" value="Submit" id="getExchange">
+    </form>
+</form>
+
+<h1 id="base"></h1>
+
 <ul class= "top-ten-currencies">
-    
+    <li class="euro">EUR</li>
+    <li class="us">USD</li>
+    <li class="japan">JPY</li>
+    <li class="uk">GBP</li>
+    <li class="swiss">CHF</li>
+    <li class="canada">CAD</li>
+    <li class="australia">AUD</li>
+    <li class="sa">ZAR</li>
+    <li class="mexico">MXN</li>
+    <li class="hk">HKG</li>
 </ul>
 
-
+<div class="news"></div>
+<div class="news-2"></div>
+<div class="news-3"></div>
 
 
 </div>
-</div>    
+</div>  
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
