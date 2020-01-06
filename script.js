@@ -82,25 +82,57 @@ let googleNews = (`https://newsapi.org/v2/top-headlines?sources=google-news&apiK
 
 let newsTicker = axios.get(googleNews).then(res=>{
     console.log(res.data)
-    let newsOne=document.querySelector('.news')
-    let imageOne=document.querySelector('#photo-1')
+    let newsOne=document.querySelector('.news-1')
+    
+    let imageOne=document.createElement('div');
+    imageOne.innerHTML=`
+    <a href=\"${res.data.articles[0]["url"]}\" target=\"_blank\">
+    <img src=\"${res.data.articles[0]["urlToImage"]}\">
+    <h3>${res.data.articles[0]["title"]}</h3>
+    <p>${res.data.articles[0]["description"]}
+    `
+    imageOne.style.width='100%'
+    imageOne.style.height= 'fit-content'
+     // target blank- opens in new browser
+    newsOne.appendChild(imageOne);
+    
 
-    // let imageOne-
+
 
     console.log(imageOne)
-    imageOne.append(res.data.articles[0]["urlToImage"])
-    newsOne.append(res.data.articles[0]["title"])
-    newsOne.append(res.data.articles[0]["description"])
+    // imageOne.append(res.data.articles[0]["urlToImage"])
+    // newsOne.append(res.data.articles[0]["title"])
+    // newsOne.append(res.data.articles[0]["description"])
 })
+
+// append image url, create element of div, acess DIV's innerHTML and write in an a tag and img tag, interpolating the appropriate URLs from the jsonto and then append url to 
+
+// inside atag place html.
 
 let koreaNews=(`https://newsapi.org/v2/top-headlines?country=kr&apiKey=f57cf770ce4741b99bc83aac6b19c03a`)
 
 let newsTicker2= axios.get(koreaNews).then(res=>{
     console.log(res.data)
-    let newsOne=document.querySelector('.news-2')
-    newsOne.append(res.data.articles[0]["urlToImage"])
-    newsOne.append(res.data.articles[0]["title"])
-    newsOne.append(res.data.articles[0]["description"])
+    let newsTwo=document.querySelector('.news-2')
+
+    let imageTwo=document.createElement('div');
+    imageTwo.innerHTML=`
+    <a href=\"${res.data.articles[0]["url"]}\" target=\"_blank\">
+   
+    <img src=\"${res.data.articles[0]["urlToImage"]}\">
+    <h3>${res.data.articles[0]["title"]}</h3>
+    <p>${res.data.articles[0]["description"]}
+    `
+     // target blank- opens in new browser
+
+    imageTwo.style.width='100%'
+    imageTwo.style.height= 'fit-content'
+    newsTwo.appendChild(imageTwo);
+    
+    // let newsOne=document.querySelector('.news-2')
+    // newsOne.append(res.data.articles[0]["urlToImage"])
+    // newsOne.append(res.data.articles[0]["title"])
+    // newsOne.append(res.data.articles[0]["description"])
 })
 
 
@@ -108,8 +140,23 @@ let hkNews= (`https://newsapi.org/v2/top-headlines?country=hk&apiKey=f57cf770ce4
 
 let newsTicker3= axios.get(hkNews).then(res=>{
     console.log(res.data)
-    let newsOne=document.querySelector('.news-3')
-    newsOne.append(res.data.articles[0]["urlToImage"])
-    newsOne.append(res.data.articles[0]["title"])
-    newsOne.append(res.data.articles[0]["description"])
+    let newsThree=document.querySelector('.news-3')
+
+    let imageThree=document.createElement('div');
+    imageThree.innerHTML=`
+    <a href=\"${res.data.articles[0]["url"]}\" target=\"_blank\">
+   
+    <img src=\"${res.data.articles[0]["urlToImage"]}\">
+    <h3>${res.data.articles[0]["title"]}</h3>
+    <p>${res.data.articles[0]["description"]}
+    `
+    imageThree.style.width='100%'
+    imageThree.style.height= 'fit-content'
+     // target blank- opens in new browser
+    newsThree.appendChild(imageThree);
+    
+    // let newsOne=document.querySelector('.news-3')
+    // newsOne.append(res.data.articles[0]["urlToImage"])
+    // newsOne.append(res.data.articles[0]["title"])
+    // newsOne.append(res.data.articles[0]["description"])
 })

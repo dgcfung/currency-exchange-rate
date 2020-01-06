@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+/* mobile & default */
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+/* tablets */
+@media (min-width:768px){
+
+}
+
+/* desktop */
+@media(min-width:992px){
+
+}
