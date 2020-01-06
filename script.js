@@ -23,7 +23,12 @@ function getInfo(event){
     base.innerHTML="Base Currency"
     base.append(": "+ inputValue)
 
-    let url = (`https://api.exchangeratesapi.io/latest?base=${inputValue}`)
+    let convertInput= inputValue.toUpperCase()
+
+    base.innerHTML="Base Currency"
+    base.append(": "+ convertInput)
+
+    let url = (`https://api.exchangeratesapi.io/latest?base=${convertInput}`)
     console.log(url)
 
     // http://data.fixer.io/api/latest?access_key=API_KEY&base=USD&symbols=GBP,JPY,EUR
@@ -78,7 +83,12 @@ let googleNews = (`https://newsapi.org/v2/top-headlines?sources=google-news&apiK
 let newsTicker = axios.get(googleNews).then(res=>{
     console.log(res.data)
     let newsOne=document.querySelector('.news')
-    newsOne.append(res.data.articles[0]["urlToImage"])
+    let imageOne=document.querySelector('#photo-1')
+
+    // let imageOne-
+
+    console.log(imageOne)
+    imageOne.append(res.data.articles[0]["urlToImage"])
     newsOne.append(res.data.articles[0]["title"])
     newsOne.append(res.data.articles[0]["description"])
 })
