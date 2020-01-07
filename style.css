@@ -3,17 +3,127 @@
 
 /* mobile & default */
 
+*{
+    padding: 1vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.doc-container{
+    border-radius: 8px;
+}
+
+header{
+    background-color: black;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    text-align: center;
+    color: #48fb47;
+    text-shadow: -1px -1px whitesmoke;
+    font-weight: bold;
+    /* border-bottom: outset; */
+    border: 5px double #48fb47;
+    /* /* border-color:#48fb47; */
+    border-radius: 20px; 
+}
+
+/* search button */
+/* .input-form{
+    width: 100vw;
+    height: 100vw
+} */
+
+
+#getExchange{
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: navy;
+    width: 10vw;
+    height: 6vw;
+}
+
+#currency-conversion{
+    border-radius: 15px;
+    width: 40vw;
+    height: 4vw;
+} 
+
+/* #getExchange{
+    width: 8vw;
+    height: 5vw;
+}  */
+
+body{
+    /* background-image: url('./photos/Foreign\ Currency.jpg'); */
+    background-color: black;
+    color: whitesmoke
+}
+
+/* 
+#getExchange{
+    background-color: whitesmoke;
+    color: navy;
+} */
+
+
+/* news article images */
 img{
     width: 50%;
     height: 50%;
 }
 
+a{
+    color:whitesmoke;
+}
+
+
+footer{
+    text-align: center;
+}
+
 /* tablets */
 @media (min-width:768px){
-
+    /* outside border ref: https://css-tricks.com/body-border/*/
+    #top, #bottom, #left, #right {
+        background:#48fb47;
+        position: fixed;
+        }
+        #left, #right {
+            top: 0; bottom: 0;
+            width: 15px;
+            }
+            #left { left: 0; }
+            #right { right: 0; }
+            
+        #top, #bottom {
+            left: 0; right: 0;
+            height: 15px;
+            }
+            #top { top: 0; }
+            #bottom { bottom: 0; }
 }
 
 /* desktop */
 @media(min-width:992px){
+
+    /* outside border ref: https://css-tricks.com/body-border/*/
+    #top, #bottom, #left, #right {
+        background: #48fb47;
+        position: fixed;
+        }
+        #left, #right {
+            top: 0; bottom: 0;
+            width: 15px;
+            }
+            #left { left: 0; }
+            #right { right: 0; }
+            
+        #top, #bottom {
+            left: 0; right: 0;
+            height: 15px;
+            }
+            #top { top: 0; }
+            #bottom { bottom: 0; }
+
+
 
 }

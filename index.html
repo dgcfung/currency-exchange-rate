@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +11,27 @@
 </head>
 
 <body>
-<div class="container">
+<div class="doc-container">
+
+<!-- outside border https://css-tricks.com/body-border/ -->
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+
     <header>
-        <h1>Currency Exchange Rate</h1>
-    </header>
+        <h1 style="font-size:4vw">Get Current Exchange Rate</h1>
+
+    <form id= "input-form">
+        <input type="text" name="currency" value="" placeholder="Enter Base Currency" id="currency-conversion">
+        <input type="submit" value="Convert" id="getExchange">
+    </form>
+
+
+    </header s>
 
 <div class="mobile-compat">
 
-
-
-<form>
-    <form>
-        <input type="text" name="currency" value="" placeholder="Currency to Convert" id="currency-conversion">
-        <input type="submit" value="Submit" id="getExchange">
-    </form>
-</form>
 
 <h1 id="base"></h1>
 
@@ -53,8 +60,11 @@
 </div>
 
 
+<footer>
 
+    <p>© Donald Fung 2020</p>
 
+</footer>
 
 </div>  
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
