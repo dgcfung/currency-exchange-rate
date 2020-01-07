@@ -13,20 +13,22 @@
 }
 
 header{
-    background-color: black;
+    background-image: url(https://media.istockphoto.com/photos/display-of-stock-market-quotes-with-city-scene-reflect-on-glass-picture-id874979248?k=6&m=874979248&s=612x612&w=0&h=KCvNd5eo1wPyaR1VDC0DCiZRarNZBrAMtN7OyCQlqDY=) ;
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     text-align: center;
-    color: #48fb47;
-    text-shadow: -1px -1px whitesmoke;
+    color: whitesmoke;
+    text-shadow: -2px -2px #48fb47;;
     font-weight: bold;
     /* border-bottom: outset; */
-    border: 5px double #48fb47;
+    border: 5px dotted #48fb47;
     /* /* border-color:#48fb47; */
     border-radius: 20px; 
 }
 
 /* search button */
+
+
 /* .input-form{
     width: 100vw;
     height: 100vw
@@ -35,17 +37,35 @@ header{
 
 #getExchange{
     border-radius: 20px;
-    background-color: whitesmoke;
-    color: navy;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
     width: 10vw;
     height: 6vw;
 }
+
+#getExchange:hover{
+    /* background-color:  #48fb47; */
+    box-shadow: 0 12px 16px 0 #48fb47;
+    transition: scale(2);
+    /* transition-duration: 1s; */
+}
+
 
 #currency-conversion{
     border-radius: 15px;
     width: 40vw;
     height: 4vw;
 } 
+
+#currency-conversion:hover{
+    /* color:  #48fb47; */
+    box-shadow: 0 12px 16px 0 #48fb47;
+    transition: scale(2);
+    /* transition-duration: 1s; */
+}
+
+
 
 /* #getExchange{
     width: 8vw;
@@ -55,9 +75,63 @@ header{
 body{
     /* background-image: url('./photos/Foreign\ Currency.jpg'); */
     background-color: black;
-    color: whitesmoke
+    color: whitesmoke;
+    /* border: 5px dotted #48fb47; */
+    /* /* border-color:#48fb47; */
+    /* border-radius: 20px;  */
+}
+.topTen {
+    /* height: auto; */
+    /* float:left; */
+
+    /* width:100%;
+    padding: 10px; */
+   
+    border: 5px dotted #48fb47;
+    /* /* border-color:#48fb47; */
+    border-radius: 20px; 
+    /* display: block; */
+    /* display: flex;
+    flex-direction: row-reverse; */
 }
 
+.top-ten-currencies{
+    /* height: 20vw; */
+    /* content:"";
+    
+     display: grid;
+    grid-column-gap: 20px;
+    display: table;
+    clear: both; */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-column-gap: 20px;
+    padding: 20px;
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+    /* float:left; */
+    list-style: none;
+    /* display: flex;
+    justify-content: flex-start; */
+    /* display: grid | inline-grid; */
+}
+
+.grid-item{
+
+}
+
+
+/* .top-ten-currencies-2{
+    padding: 20px;
+    /* display:block; */
+    /* display: flex;
+    justify-content: flex-end; */
+    /* float:right; */
+    /* list-style: none;
+    display: grid | inline-grid;
+} */ 
 /* 
 #getExchange{
     background-color: whitesmoke;
@@ -66,18 +140,38 @@ body{
 
 
 /* news article images */
+.news{
+    border: 5px dotted #48fb47;
+    /* /* border-color:#48fb47; */
+    border-radius: 20px;  
+    /* float: left; */
+    border: 5px dotted #48fb47;
+    /* /* border-color:#48fb47; */
+    border-radius: 20px; 
+}
+
 img{
     width: 50%;
     height: 50%;
+    /* float: left; */
+    display: block;
+    
 }
 
 a{
     color:whitesmoke;
 }
 
+/* .news-1{
+    float:left;
+} */
 
 footer{
     text-align: center;
+    border: 5px dotted #48fb47;
+    /* /* border-color:#48fb47; */
+    border: 5px dotted #48fb47;
+    border-radius: 20px; 
 }
 
 /* tablets */
@@ -100,6 +194,14 @@ footer{
             }
             #top { top: 0; }
             #bottom { bottom: 0; }
+            
+        img{
+                width: 50%;
+                height: 50%;
+                float: left;
+                display: block;
+            }
+
 }
 
 /* desktop */
@@ -123,6 +225,14 @@ footer{
             }
             #top { top: 0; }
             #bottom { bottom: 0; }
+
+        img{
+            width: 50%;
+            height: 50%;
+            float: left;
+            display:block;
+            /* overflow: hidden; */
+            }
 
 
 

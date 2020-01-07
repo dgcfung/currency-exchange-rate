@@ -11,9 +11,27 @@ const api_key="5c0aeca61856c8f978ae76dfa949649b";
 console.log(api_key)
 
 
+// on load animation
+// window.addEventListener("load", () => {
+//     document.querySelector("header").classList.add("loaded"); 
+//    });
+
+
 let newBase= document.querySelector('#getExchange')
 newBase.addEventListener('click', getInfo);
 
+// let searchBar = document.querySelector('#currency-conversion')
+// searchBar.addEventListener('mouseover', barEffect)
+// let convertButton = document.querySelector('#getExchange')
+// convertButton.addEventListener('mouseover', buttonEffect)
+
+// function barEffect(event){
+
+// }
+
+// function convertButton(event){
+
+// }
 
 function getInfo(event){
     event.preventDefault()

@@ -3,17 +3,16 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Currency Exchange Rate</title>
 </head>
 
 <body>
-<div class="doc-container">
+    <!-- <div class="doc-container"> -->
 
-<!-- outside border https://css-tricks.com/body-border/ -->
+    <!-- outside border https://css-tricks.com/body-border/ -->
     <div id="left"></div>
     <div id="right"></div>
     <div id="top"></div>
@@ -22,52 +21,58 @@
     <header>
         <h1 style="font-size:4vw">Get Current Exchange Rate</h1>
 
-    <form id= "input-form">
-        <input type="text" name="currency" value="" placeholder="Enter Base Currency" id="currency-conversion">
-        <input type="submit" value="Convert" id="getExchange">
-    </form>
+        <form id="input-form">
+            <input type="text" name="currency" value="" placeholder="Enter Base Currency" id="currency-conversion">
+            <input type="submit" value="Convert" id="getExchange">
+        </form>
+        <h1 id="base"></h1>
+
+    </header>
+
+    <div class="mobile-compat">
 
 
-    </header s>
+        <!-- <h1 id="base"></h1> -->
+        <div class="topTen">
+            <ul class="top-ten-currencies">
+                <li class="euro grid-item">EUR</li>
+                <li class="us grid-item">USD</li>
+                <li class="japan grid-item">JPY</li>
+                <li class="uk grid-item">GBP</li>
+                <li class="swiss grid-item">CHF</li>
+            </ul>
+            <ul class="top-ten-currencies">
+                <li class="canada grid-item">CAD</li>
+                <li class="australia grid-item">AUD</li>
+                <li class="sa grid-item">ZAR</li>
+                <li class="mexico grid-item">MXN</li>
+                <li class="hk grid-item">HKG</li>
+            </ul>
+        </div>
 
-<div class="mobile-compat">
-
-
-<h1 id="base"></h1>
-
-<ul class= "top-ten-currencies">
-    <li class="euro">EUR</li>
-    <li class="us">USD</li>
-    <li class="japan">JPY</li>
-    <li class="uk">GBP</li>
-    <li class="swiss">CHF</li>
-    <li class="canada">CAD</li>
-    <li class="australia">AUD</li>
-    <li class="sa">ZAR</li>
-    <li class="mexico">MXN</li>
-    <li class="hk">HKG</li>
-</ul>
-
-<div class="news"></div>
-<h1>Latest World News</h1>
-<div class= "news-1"></div>
-    <!-- <a id= "photo" href=""></a>
+        <div class="news">
+            <h1>Latest World News</h1>
+            <div class="news-1"></div>
+            <!-- <a id= "photo" href=""></a>
     <img src="photo-1"> -->
-<div class="news-2"></div>
-    <div id="photo-2"></div>
-<div class="news-3"></div>
-    <div id="photo-3"></div>
-</div>
+            <div class="news-2"></div>
+            <div id="photo-2"></div>
+            <div class="news-3"></div>
+            <div id="photo-3"></div>
+        </div>
+
+    </div>
 
 
-<footer>
+    <footer>
 
-    <p>© Donald Fung 2020</p>
+        <p>© General Assembly: Donald Fung 2020</p>
 
-</footer>
+    </footer>
 
-</div>  
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
