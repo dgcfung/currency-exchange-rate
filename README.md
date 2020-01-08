@@ -59,8 +59,6 @@ Last day 1/8/2020: Working on last post-MVP converting currency amount to new do
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -75,8 +73,6 @@ Tell us how long you anticipate spending on each area of development. Be sure to
 See Above.
 
 ## Code Snippet
-
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
 let googleNews = (`https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=f57cf770ce4741b99bc83aac6b19c03a`)
 
@@ -109,7 +105,6 @@ I later went back and appended CSS styling for the purpose of fitting content on
 
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.
 
  I needed to use a different API than my original API to avoid subscription keys. The second API actually worked more efficiently without API Key. My post-MVP's were of converting any two currencies as opposed to only converting USD were achieved in my MVP due to the API change.
 
