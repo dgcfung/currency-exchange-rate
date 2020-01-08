@@ -158,6 +158,18 @@ img{
     
 }
 
+.news-item{
+    display: flex;
+}
+
+.image-container{
+    width:50vw !important;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 a{
     color:whitesmoke;
 }
@@ -227,12 +239,14 @@ footer{
             #bottom { bottom: 0; }
 
         img{
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            /* height: 50%; */
             float: left;
             display:block;
             /* overflow: hidden; */
             }
+
+        
 
 
 

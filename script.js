@@ -105,9 +105,13 @@ let newsTicker = axios.get(googleNews).then(res=>{
     let imageOne=document.createElement('div');
     imageOne.innerHTML=`
     <a href=\"${res.data.articles[0]["url"]}\" target=\"_blank\">
-    <img src=\"${res.data.articles[0]["urlToImage"]}\">
-    <h3>${res.data.articles[0]["title"]}</h3>
-    <p>${res.data.articles[0]["description"]}
+    <div class="news-item">
+    <div class= "image-container" style='background-image: url("${res.data.articles[0]["urlToImage"]}")' >
+    </div>
+        <h3>${res.data.articles[0]["title"]}</h3>
+        <p>${res.data.articles[0]["description"]}</p>
+    </div>
+    </a>
     `
     imageOne.style.width='100%'
     imageOne.style.height= 'fit-content'
@@ -136,11 +140,18 @@ let newsTicker2= axios.get(koreaNews).then(res=>{
     let imageTwo=document.createElement('div');
     imageTwo.innerHTML=`
     <a href=\"${res.data.articles[0]["url"]}\" target=\"_blank\">
-   
-    <img src=\"${res.data.articles[0]["urlToImage"]}\">
+    <div class="news-item">
+    <div class= "image-container" style='background-image: url("${res.data.articles[0]["urlToImage"]}")' >
+    </div>
     <h3>${res.data.articles[0]["title"]}</h3>
-    <p>${res.data.articles[0]["description"]}
+    <p>${res.data.articles[0]["description"]}</p>
+    </div>
+    </a>
     `
+
+    // <div class="news-item">
+    // <div class= "image-container" style='background-image: url("${res.data.articles[0]["urlToImage"]}")' >
+
      // target blank- opens in new browser
 
     imageTwo.style.width='100%'
@@ -163,10 +174,13 @@ let newsTicker3= axios.get(hkNews).then(res=>{
     let imageThree=document.createElement('div');
     imageThree.innerHTML=`
     <a href=\"${res.data.articles[0]["url"]}\" target=\"_blank\">
-   
-    <img src=\"${res.data.articles[0]["urlToImage"]}\">
+    <div class="news-item">
+    <div class= "image-container" style='background-image: url("${res.data.articles[0]["urlToImage"]}")' >
+    </div>
     <h3>${res.data.articles[0]["title"]}</h3>
-    <p>${res.data.articles[0]["description"]}
+    <p>${res.data.articles[0]["description"]}</p>
+    </div>
+    </a>
     `
     imageThree.style.width='100%'
     imageThree.style.height= 'fit-content'
