@@ -48,6 +48,8 @@ header{
     /* background-color:  #48fb47; */
     box-shadow: 0 12px 16px 0 #48fb47;
     transition: scale(2);
+    color: black;
+    background-color: whitesmoke;
     /* transition-duration: 1s; */
 }
 
